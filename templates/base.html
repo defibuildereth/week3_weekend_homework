@@ -4,8 +4,16 @@
     </head>
 
     <body>
-        <p>this is the body</p>
+        <ul>
+            <li><a href="/welcome">Home</a></li>
+        </ul>
+
+        <hr>
+
+        {% block content %}
 
         <p>Result = {{winner.name}} played {{winner.choice}}, beating {{loser.name}} who played {{loser.choice}}</p>
     </body>
+
+    {% endblock %}
 </html>
